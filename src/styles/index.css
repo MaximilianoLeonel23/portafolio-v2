@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-berty;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.slider:before,
+.slider:after {
+  position: absolute;
+  top: 0;
+  width: 15rem;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.slider:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.slider:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.slider-track {
+  display: inline-block;
+  animation: 30s slide infinite linear;
+}
+
+.blackout-light {
+  @apply bg-primary-white;
+}
+
+.blackout-dark {
+  @apply bg-gray-800;
+}

@@ -30,13 +30,13 @@ const Navbar: React.FC<Props> = ({ theme, setTheme }) => {
   return (
     <nav>
       <ul className="hidden md:flex items-center gap-4 font-medium">
-        <li className="font-medium text-gray-800 text-sm">
+        <li className={`navbar-item navbar-item-${theme}`}>
           <a href="#home">Inicio</a>
         </li>
-        <li className="font-medium text-gray-800 text-sm">
+        <li className={`navbar-item navbar-item-${theme}`}>
           <a href="#projects">Proyectos</a>
         </li>
-        <li className="font-medium text-gray-800 text-sm">
+        <li className={`navbar-item navbar-item-${theme}`}>
           <a href="#about">Sobre mi</a>
         </li>
         <li className="flex items-center justify-center h-6 w-6">

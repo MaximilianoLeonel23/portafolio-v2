@@ -40,14 +40,46 @@ body {
   animation: 45s slide infinite linear;
 }
 
+.blur-background {
+  backdrop-filter: blur(8px);
+}
+
+/* Components  */
+
+.navbar-item {
+  @apply font-medium  text-sm;
+}
+/* Light Mode */
+
 .blackout-light {
   @apply bg-primary-white;
 }
+
+.header-light {
+  @apply border-primary-light-500;
+}
+
+.mail-light {
+  @apply text-gray-600;
+}
+
+.navbar-item-light {
+  @apply text-gray-600 hover:text-primary-light-500;
+}
+/* Dark Mode */
 
 .blackout-dark {
   @apply bg-gray-800;
 }
 
-.blur-background {
-  backdrop-filter: blur(8px);
+.header-dark {
+  @apply border-primary-dark-500;
+}
+
+.mail-dark {
+  @apply text-gray-200;
+}
+
+.navbar-item-dark {
+  @apply text-gray-200 hover:text-primary-dark-500;
 }

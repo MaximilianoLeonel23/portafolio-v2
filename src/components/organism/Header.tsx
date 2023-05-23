@@ -7,9 +7,11 @@ interface Props {
 }
 const Header: React.FC<Props> = ({ theme, setTheme }) => {
   return (
-    <header className="fixed left-0 right-0 py-4 z-30 blur-background border-b border-gray-500">
+    <header
+      className={`fixed left-0 right-0 py-4 z-30 blur-background border-b header-${theme}`}
+    >
       <div className="container flex justify-between items-center">
-        <Logo />
+        <Logo theme={theme} />
         <Navbar theme={theme} setTheme={setTheme} />
       </div>
     </header>

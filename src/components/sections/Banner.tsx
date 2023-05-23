@@ -7,6 +7,9 @@ import tailwindcss from "../../assets/devskills/tailwindcss.svg";
 import git from "../../assets/devskills/git.svg";
 import bootstrap from "../../assets/devskills/bootstrap.svg";
 import typescript from "../../assets/devskills/typescript.svg";
+import nodejs from "../../assets/devskills/nodejs.svg";
+import jest from "../../assets/devskills/jest.svg";
+import mongodb from "../../assets/devskills/mongodb.svg";
 import Tech from "../molecules/Tech.js";
 
 const Banner: React.FC = () => {
@@ -20,10 +23,13 @@ const Banner: React.FC = () => {
     git,
     bootstrap,
     typescript,
+    nodejs,
+    mongodb,
+    jest,
   ];
 
   return (
-    <section className="py-24 bg-gray-50 overflow-hidden relative whitespace-nowrap slider">
+    <section className="py-12 lg:py-20 bg-gray-50 overflow-hidden relative whitespace-nowrap slider">
       <div className="slider-track">
         {technologies.map((item: string) => {
           return <Tech source={item} />;

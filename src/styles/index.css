@@ -19,7 +19,7 @@ body {
 .slider:after {
   position: absolute;
   top: 0;
-  width: 15rem;
+  width: 15%;
   height: 100%;
   content: "";
   z-index: 2;
@@ -37,7 +37,7 @@ body {
 
 .slider-track {
   display: inline-block;
-  animation: 30s slide infinite linear;
+  animation: 45s slide infinite linear;
 }
 
 .blackout-light {
@@ -46,4 +46,8 @@ body {
 
 .blackout-dark {
   @apply bg-gray-800;
+}
+
+.blur-background {
+  backdrop-filter: blur(8px);
 }

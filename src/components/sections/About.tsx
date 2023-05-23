@@ -1,17 +1,26 @@
 import photo from "../../assets/about/photo.jpg";
+import githubLight from "../../assets/icons/github-light.svg";
+import linkedinLight from "../../assets/icons/linkedin-light.svg";
+import githubDark from "../../assets/icons/github-dark.svg";
+import linkedinDark from "../../assets/icons/linkedin-dark.svg";
 
-const About = () => {
+interface Props {
+  theme: string;
+}
+const About: React.FC<Props> = ({ theme }) => {
   return (
     <section id="about" className="container py-16">
-      <div className="flex gap-x-16">
-        <div className="flex items-end justify-center">
-          <img src={photo} className="w-2/5 pb-8" />
+      <div className="flex flex-col-reverse lg:flex-row gap-y-16 gap-x-16">
+        <div className="flex items-start lg:items-end justify-start lg:justify-center">
+          <img src={photo} className="w-2/3 lg:w-2/5 pb-8" />
         </div>
         <div>
           <div className="flex flex-col gap-y-8">
             <div className="flex flex-col gap-y-4">
-              <h4 className="font-semibold text-xl text-gray-600">Sobre mi</h4>
-              <p className="text-gray-500">
+              <h4 className="font-semibold  text-lg lg:text-xl text-gray-600">
+                Sobre mi
+              </h4>
+              <p className="text-sm lg:text-base text-gray-500 leading-6">
                 Soy una persona disciplinada, organizada y eficiente en mi
                 trabajo. Tengo paciencia y buena predisposición para aprender y
                 busco constantemente desafiar mis habilidades. Me considero
@@ -19,10 +28,10 @@ const About = () => {
               </p>
             </div>
             <div className="flex flex-col gap-y-4">
-              <h4 className="font-semibold text-xl text-gray-600">
+              <h4 className="font-semibold  text-lg lg:text-xl text-gray-600">
                 Formación y cursos
               </h4>
-              <ul className="text-gray-500">
+              <ul className="text-sm lg:text-base text-gray-500 leading-6">
                 <li>Programación desde cero - Egg Educación</li>
                 <li>Front End - EDteam</li>
                 <li>Javascript Front End - Argentina Programa 4.0</li>
@@ -31,11 +40,11 @@ const About = () => {
               </ul>
             </div>
             <div className="flex flex-col gap-y-4">
-              <h4 className="font-semibold text-xl text-gray-600">
+              <h4 className="font-semibold  text-lg lg:text-xl text-gray-600">
                 Tecnologías
               </h4>
               <div className="columns-2 gap-x-8">
-                <ul className="text-gray-500">
+                <ul className="text-sm lg:text-base text-gray-500 leading-6">
                   <li>HTML</li>
                   <li>CSS</li>
                   <li>JavaScript</li>
@@ -44,7 +53,7 @@ const About = () => {
                   <li>Git</li>
                   <li>Sass</li>
                 </ul>
-                <ul className="text-gray-500">
+                <ul className="text-sm lg:text-base text-gray-500 leading-6">
                   <li>Tailwind CSS</li>
                   <li>Bootstrap</li>
                   <li>Node.js</li>
@@ -54,22 +63,31 @@ const About = () => {
                 </ul>
               </div>
             </div>
-            <div className="flex items-center gap-x-8">
-              <h4 className="font-semibold text-xl text-gray-600">Contacto</h4>
+            <div className="flex items-center gap-x-4">
+              <h4 className="font-semibold  text-lg lg:text-xl text-gray-600">
+                Contacto
+              </h4>
               <ul className="flex gap-x-4">
                 <li>
-                  <a>
-                    <div className="h-4 w-4 bg-primary-light-500 rounded-full"></div>
+                  <a
+                    href="https://github.com/MaximilianoLeonel23"
+                    target="_blank"
+                  >
+                    <div className="h-8 w-8 ">
+                      <img src={theme === "light" ? githubLight : githubDark} />
+                    </div>
                   </a>
                 </li>
                 <li>
-                  <a>
-                    <div className="h-4 w-4 bg-primary-light-500 rounded-full"></div>
-                  </a>
-                </li>
-                <li>
-                  <a>
-                    <div className="h-4 w-4 bg-primary-light-500 rounded-full"></div>
+                  <a
+                    href="https://www.linkedin.com/in/maximiliano-leonel-p%C3%A9rez-8846b826a/"
+                    target="_blank"
+                  >
+                    <div className="h-8 w-8 ">
+                      <img
+                        src={theme === "light" ? linkedinLight : linkedinDark}
+                      />
+                    </div>
                   </a>
                 </li>
               </ul>

@@ -6,9 +6,8 @@ const App = () => {
 
   return (
     <div className={`blackout-${theme}`}>
-      <Header />
-      <Main />
-      <footer></footer>
+      <Header theme={theme} setTheme={setTheme} />
+      <Main theme={theme} />
     </div>
   );
 };

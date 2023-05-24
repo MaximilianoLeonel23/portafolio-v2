@@ -2,7 +2,12 @@ import Project from "../organism/Project";
 import projectsData from "../../helper/projectsData";
 import { IProject } from "../../helper/projectsData";
 import { useState } from "react";
-const Projects = () => {
+
+interface Props {
+  theme: string;
+}
+
+const Projects: React.FC<Props> = ({ theme }) => {
   const initialVisibleCount: number = 3;
   const [visibleCount, setVisibleCount] = useState<number>(initialVisibleCount);
 
@@ -16,14 +21,14 @@ const Projects = () => {
     >
       <div className="flex flex-col  gap-y-8">
         {projectsData.slice(0, visibleCount).map((project: IProject) => {
-          return <Project key={project.id} project={project} />;
+          return <Project theme={theme} key={project.id} project={project} />;
         })}
       </div>
       {visibleCount < projectsData.length && (
         <div className="pt-8">
           <button
             type="button"
-            className="py-3 px-6 lg:py-4 lg:px-8 text-sm lg:text-base  border border-gray-800 text-gray-800 rounded hover:text-primary-white hover:bg-gray-800 transition duration-300"
+            className={`projects-btn-${theme} py-3 px-6 lg:py-4 lg:px-8 text-sm lg:text-base  border  transition duration-300`}
             onClick={handleShowMore}
           >
             Más proyectos

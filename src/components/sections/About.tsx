@@ -17,10 +17,14 @@ const About: React.FC<Props> = ({ theme }) => {
         <div>
           <div className="flex flex-col gap-y-8">
             <div className="flex flex-col gap-y-4">
-              <h4 className="font-semibold  text-lg lg:text-xl text-gray-600">
+              <h4
+                className={`about-title-${theme} font-semibold  text-lg lg:text-xl`}
+              >
                 Sobre mi
               </h4>
-              <p className="text-sm lg:text-base text-gray-500 leading-6">
+              <p
+                className={`about-text-${theme} text-sm lg:text-base leading-6`}
+              >
                 Soy una persona disciplinada, organizada y eficiente en mi
                 trabajo. Tengo paciencia y buena predisposición para aprender y
                 busco constantemente desafiar mis habilidades. Me considero
@@ -28,10 +32,14 @@ const About: React.FC<Props> = ({ theme }) => {
               </p>
             </div>
             <div className="flex flex-col gap-y-4">
-              <h4 className="font-semibold  text-lg lg:text-xl text-gray-600">
+              <h4
+                className={`about-title-${theme} font-semibold  text-lg lg:text-xl`}
+              >
                 Formación y cursos
               </h4>
-              <ul className="text-sm lg:text-base text-gray-500 leading-6">
+              <ul
+                className={`about-text-${theme} text-sm lg:text-base leading-6`}
+              >
                 <li>Programación desde cero - Egg Educación</li>
                 <li>Front End - EDteam</li>
                 <li>Javascript Front End - Argentina Programa 4.0</li>
@@ -40,11 +48,15 @@ const About: React.FC<Props> = ({ theme }) => {
               </ul>
             </div>
             <div className="flex flex-col gap-y-4">
-              <h4 className="font-semibold  text-lg lg:text-xl text-gray-600">
+              <h4
+                className={`about-title-${theme} font-semibold  text-lg lg:text-xl`}
+              >
                 Tecnologías
               </h4>
               <div className="columns-2 gap-x-8">
-                <ul className="text-sm lg:text-base text-gray-500 leading-6">
+                <ul
+                  className={`about-text-${theme} text-sm lg:text-base leading-6`}
+                >
                   <li>HTML</li>
                   <li>CSS</li>
                   <li>JavaScript</li>
@@ -53,7 +65,9 @@ const About: React.FC<Props> = ({ theme }) => {
                   <li>Git</li>
                   <li>Sass</li>
                 </ul>
-                <ul className="text-sm lg:text-base text-gray-500 leading-6">
+                <ul
+                  className={`about-text-${theme} text-sm lg:text-base leading-6`}
+                >
                   <li>Tailwind CSS</li>
                   <li>Bootstrap</li>
                   <li>Node.js</li>
@@ -64,7 +78,9 @@ const About: React.FC<Props> = ({ theme }) => {
               </div>
             </div>
             <div className="flex items-center gap-x-4">
-              <h4 className="font-semibold  text-lg lg:text-xl text-gray-600">
+              <h4
+                className={`about-title-${theme} font-semibold  text-lg lg:text-xl`}
+              >
                 Contacto
               </h4>
               <ul className="flex gap-x-4">

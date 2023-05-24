@@ -11,9 +11,9 @@ const Main: React.FC<Props> = ({ theme }) => {
   return (
     <main className="pt-16">
       <Home theme={theme} />
-      <Banner />
-      <Projects />
-      <Quote />
+      <Banner theme={theme} />
+      <Projects theme={theme} />
+      <Quote theme={theme} />
       <About theme={theme} />
     </main>
   );

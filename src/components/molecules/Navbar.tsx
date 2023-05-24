@@ -63,15 +63,15 @@ const Navbar: React.FC<Props> = ({ theme, setTheme }) => {
           <div className="flex flex-col gap-y-2 z-10" onClick={changeBtn}>
             <span
               id="line1"
-              className="w-8 h-0.5 rounded-lg bg-gray-800 transition"
+              className={`w-8 h-0.5 rounded-lg navbar-menu-${theme} bg-gray-800 transition`}
             ></span>
             <span
               id="line2"
-              className="w-8 h-0.5 -translate-x-1 rounded-lg bg-gray-800 transition"
+              className={`w-8 h-0.5 -translate-x-1 rounded-lg navbar-menu-${theme} transition`}
             ></span>
             <span
               id="line3"
-              className="w-8 h-0.5 rounded-lg bg-gray-800 transition"
+              className={`w-8 h-0.5 rounded-lg navbar-menu-${theme} transition`}
             ></span>
           </div>
         </li>

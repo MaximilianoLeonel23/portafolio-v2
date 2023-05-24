@@ -15,29 +15,39 @@ body {
   }
 }
 
-.slider:before,
+/* .slider:before,
 .slider:after {
   position: absolute;
   top: 0;
-  width: 15%;
+  width: 25%;
   height: 100%;
   content: "";
   z-index: 2;
-}
+} */
 
-.slider:before {
+.slider-light:before {
   left: 0;
   background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
 }
 
-.slider:after {
+.slider-light:after {
   right: 0;
   background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
 }
 
+.slider-dark:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #1f2937);
+}
+
+.slider-dark:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #1f2937);
+}
+
 .slider-track {
   display: inline-block;
-  animation: 45s slide infinite linear;
+  animation: 40s slide infinite linear;
 }
 
 .blur-background {
@@ -49,37 +59,160 @@ body {
 .navbar-item {
   @apply font-medium  text-sm;
 }
+
 /* Light Mode */
 
 .blackout-light {
   @apply bg-primary-white;
 }
-
+/* Header light */
 .header-light {
   @apply border-primary-light-500;
 }
 
 .mail-light {
-  @apply text-gray-600;
+  @apply text-gray-700;
 }
 
 .navbar-item-light {
-  @apply text-gray-600 hover:text-primary-light-500;
+  @apply text-gray-700 hover:text-primary-light-500;
+}
+
+.navbar-menu-light {
+  @apply bg-gray-800;
+}
+/* Home light */
+.home-title-light {
+  @apply text-gray-900;
+}
+
+.home-subtitle-light {
+  @apply text-gray-700;
+}
+/* Banner Light */
+.banner-light {
+  @apply bg-gray-50;
+}
+
+/* Projects light */
+
+.projects-btn-light {
+  @apply border-gray-800 text-gray-800 rounded hover:text-primary-white hover:bg-gray-800;
+}
+
+.project-num-light {
+  @apply text-gray-600;
+}
+
+.project-title-light {
+  @apply text-gray-600;
+}
+
+.project-description-light {
+  @apply text-gray-500;
+}
+
+.project-border-light {
+  @apply border-gray-200;
+}
+
+.project-link-light {
+  @apply text-primary-light-500;
+}
+
+.project-label-light {
+  @apply bg-gray-100 text-gray-500;
+}
+
+/* Quote light */
+.quote-light {
+  @apply bg-primary-light-500 text-primary-light-700;
+}
+
+/* About light */
+.about-title-light {
+  @apply text-gray-600;
+}
+
+.about-text-light {
+  @apply text-gray-500;
 }
 /* Dark Mode */
 
 .blackout-dark {
   @apply bg-gray-800;
 }
-
+/* Header dark */
 .header-dark {
   @apply border-primary-dark-500;
 }
 
 .mail-dark {
-  @apply text-gray-200;
+  @apply text-gray-100;
 }
 
 .navbar-item-dark {
-  @apply text-gray-200 hover:text-primary-dark-500;
+  @apply text-gray-100 hover:text-primary-dark-500;
+}
+.navbar-menu-dark {
+  @apply bg-gray-100;
+}
+
+/* Home dark */
+
+.home-title-dark {
+  @apply text-primary-white;
+}
+
+.home-subtitle-dark {
+  @apply text-gray-100;
+}
+
+/* Banner dark */
+
+.banner-dark {
+  @apply bg-gray-700;
+}
+
+/* Projects dark */
+
+.projects-btn-dark {
+  @apply border-primary-white text-primary-white rounded hover:text-gray-800 hover:bg-primary-white;
+}
+
+.project-num-dark {
+  @apply text-gray-200;
+}
+
+.project-title-dark {
+  @apply text-gray-200;
+}
+
+.project-description-dark {
+  @apply text-gray-400;
+}
+
+.project-border-dark {
+  @apply border-gray-600;
+}
+.project-link-dark {
+  @apply text-primary-dark-500;
+}
+
+.project-label-dark {
+  @apply bg-gray-700 text-gray-400;
+}
+
+/* Quote dark */
+.quote-dark {
+  @apply bg-primary-dark-500 text-primary-light-600;
+}
+
+/* About light */
+.about-title-dark {
+  @apply text-gray-200;
+}
+
+.about-text-dark {
+  @apply text-gray-400;
 }

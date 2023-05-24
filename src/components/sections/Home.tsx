@@ -12,10 +12,10 @@ const Home: React.FC<Props> = ({ theme }) => {
     <section id="home" className="h-screen container">
       <div className="relative h-full">
         <div className="flex flex-col gap-y-4 pt-32 lg:pt-40">
-          <p className="text-gray-800 text-sm lg:text-base">
+          <p className={`text-sm lg:text-base home-subtitle-${theme}`}>
             Maximiliano Leonel Pérez
           </p>
-          <h1 className="font-bold text-6xl lg:text-7xl text-gray-900">
+          <h1 className={`font-bold text-6xl lg:text-7xl home-title-${theme}`}>
             Frontend Developer
           </h1>
           <ul className="flex gap-x-4">

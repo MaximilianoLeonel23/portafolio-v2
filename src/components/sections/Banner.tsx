@@ -12,7 +12,10 @@ import jest from "../../assets/devskills/jest.svg";
 import mongodb from "../../assets/devskills/mongodb.svg";
 import Tech from "../molecules/Tech.js";
 
-const Banner: React.FC = () => {
+interface Props {
+  theme: string;
+}
+const Banner: React.FC<Props> = ({ theme }) => {
   const technologies: string[] = [
     html5,
     css3,
@@ -29,7 +32,9 @@ const Banner: React.FC = () => {
   ];
 
   return (
-    <section className="py-12 lg:py-20 bg-gray-50 overflow-hidden relative whitespace-nowrap slider">
+    <section
+      className={`py-8 lg:py-20 banner-${theme} overflow-hidden relative whitespace-nowrap slider slider-${theme}`}
+    >
       <div className="slider-track">
         {technologies.map((item: string) => {
           return <Tech source={item} />;

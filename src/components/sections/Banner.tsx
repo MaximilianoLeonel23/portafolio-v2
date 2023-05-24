@@ -37,7 +37,7 @@ const Banner: React.FC<Props> = ({ theme }) => {
     >
       <div className="slider-track">
         {technologies.map((item: string) => {
-          return <Tech source={item} />;
+          return <Tech source={item} key={item} />;
         })}
       </div>
       <div className="slider-track">

@@ -8,6 +8,7 @@ interface Props {
 const Project: React.FC<Props> = ({ project, theme }) => {
   const { id, title, link, shortLink, source, desktop, mobile, description } =
     project;
+
   return (
     <article className={`project-border-${theme} border-b py-4`}>
       <div className="columns-1 lg:columns-2 gap-32">
@@ -15,7 +16,7 @@ const Project: React.FC<Props> = ({ project, theme }) => {
           <p className={`w-1/4 project-num-${theme}`}>0{id}</p>
           <div className="w-3/4 -mt-2">
             <a href={link} target="_blank">
-              <img src={source} className="rounded" />
+              <img src={source} className="rounded" loading="lazy" />
             </a>
           </div>
         </div>

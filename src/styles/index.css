@@ -149,7 +149,7 @@ body {
   @apply border-gray-800 text-gray-800 before:bg-gray-800;
 }
 .cv-btn-light:hover span {
-  @apply text-primary-white;
+  @apply text-gray-50;
 }
 
 .cv-btn-dark:hover span {
@@ -157,7 +157,7 @@ body {
 }
 
 .cv-btn-dark {
-  @apply border-primary-white text-primary-white before:bg-primary-white;
+  @apply border-gray-50 text-gray-50 before:bg-gray-50;
 }
 
 /* Project button */
@@ -313,7 +313,7 @@ body {
 /* Projects dark */
 
 .projects-btn-dark {
-  @apply border-primary-white text-primary-white before:bg-primary-white;
+  @apply border-gray-50 text-gray-50 before:bg-gray-50;
 }
 
 .project-num-dark {

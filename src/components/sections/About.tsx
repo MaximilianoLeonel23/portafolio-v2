@@ -12,7 +12,7 @@ const About: React.FC<Props> = ({ theme }) => {
     <section id="about" className="container py-16">
       <div className="flex flex-col-reverse lg:flex-row gap-y-16 gap-x-16">
         <div className="flex items-start lg:items-end justify-start lg:justify-center">
-          <img src={photo} className="w-2/3 lg:w-2/5 pb-8" />
+          <img src={photo} className="w-2/3 lg:w-2/5 pb-8 drop-shadow-lg" />
         </div>
         <div>
           <div className="flex flex-col gap-y-8">

@@ -14,7 +14,7 @@ const Project: React.FC<Props> = ({ project, theme }) => {
         <div className="flex justify-between">
           <p className={`w-1/4 project-num-${theme}`}>0{id}</p>
           <div className="w-3/4 -mt-2">
-            <a href={link}>
+            <a href={link} target="_blank">
               <img src={source} className="rounded" />
             </a>
           </div>
@@ -29,6 +29,7 @@ const Project: React.FC<Props> = ({ project, theme }) => {
           <a
             href={link}
             className={`project-link-${theme} font-normal text-sm hover:underline underline-offset-4`}
+            target="_blank"
           >
             {shortLink}
           </a>

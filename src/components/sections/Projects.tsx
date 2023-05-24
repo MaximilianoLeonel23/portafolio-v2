@@ -28,10 +28,10 @@ const Projects: React.FC<Props> = ({ theme }) => {
         <div className="pt-8">
           <button
             type="button"
-            className={`projects-btn-${theme} py-3 px-6 lg:py-4 lg:px-8 text-sm lg:text-base  border  transition duration-300`}
+            className={`projects-btn projects-btn-${theme}`}
             onClick={handleShowMore}
           >
-            Más proyectos
+            <span>Más proyectos</span>
           </button>
         </div>
       )}

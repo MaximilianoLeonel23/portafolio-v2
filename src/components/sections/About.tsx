@@ -90,7 +90,14 @@ const About: React.FC<Props> = ({ theme }) => {
                     target="_blank"
                   >
                     <div className="h-8 w-8 ">
-                      <img src={theme === "light" ? githubLight : githubDark} />
+                      <img
+                        src={theme === "light" ? githubLight : githubDark}
+                        className={
+                          theme === "light"
+                            ? "hover:brightness-75 transition duration-300"
+                            : "hover:brightness-125 transition duration-300"
+                        }
+                      />
                     </div>
                   </a>
                 </li>
@@ -102,6 +109,11 @@ const About: React.FC<Props> = ({ theme }) => {
                     <div className="h-8 w-8 ">
                       <img
                         src={theme === "light" ? linkedinLight : linkedinDark}
+                        className={
+                          theme === "light"
+                            ? "hover:brightness-75 transition duration-300"
+                            : "hover:brightness-125 transition duration-300"
+                        }
                       />
                     </div>
                   </a>

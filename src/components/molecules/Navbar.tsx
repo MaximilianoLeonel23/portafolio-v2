@@ -29,15 +29,26 @@ const Navbar: React.FC<Props> = ({ theme, setTheme }) => {
 
   return (
     <nav>
-      <ul className="hidden md:flex items-center gap-4 font-medium">
+      <ul className="hidden md:flex items-center gap-6 font-medium">
         <li className={`navbar-item navbar-item-${theme}`}>
-          <a href="#home">Inicio</a>
+          <a href="#home">
+            {" "}
+            <span className="main-text">Inicio</span>
+            <span className="hover-text">Inicio</span>
+          </a>
         </li>
         <li className={`navbar-item navbar-item-${theme}`}>
-          <a href="#projects">Proyectos</a>
+          <a href="#projects">
+            {" "}
+            <span className="main-text">Proyectos</span>
+            <span className="hover-text">Proyectos</span>
+          </a>
         </li>
         <li className={`navbar-item navbar-item-${theme}`}>
-          <a href="#about">Sobre mi</a>
+          <a href="#about">
+            <span className="main-text">Sobre mi</span>
+            <span className="hover-text">Sobre mi</span>
+          </a>
         </li>
         <li className="flex items-center justify-center h-6 w-6">
           <a onClick={handleThemeMode} className="cursor-pointer">

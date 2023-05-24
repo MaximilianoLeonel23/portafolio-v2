@@ -56,8 +56,116 @@ body {
 
 /* Components  */
 
+/* Navbar item */
 .navbar-item {
-  @apply font-medium  text-sm;
+  @apply font-medium text-sm;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.main-text {
+  display: block;
+  transition: transform 500ms;
+}
+
+.hover-text {
+  transition: transform 250ms;
+  transform: translateY(100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-item:hover .main-text {
+  transition: transform 250ms;
+  transform: translateY(-100%);
+}
+
+.navbar-item:hover .hover-text {
+  transition: transform 250ms;
+  transform: translateY(0%);
+}
+/* CV button */
+.cv-btn {
+  @apply py-2 px-4 text-sm  border rounded  overflow-hidden relative inline-block;
+}
+
+.cv-btn span {
+  position: relative;
+  transition: color 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+}
+
+.cv-btn:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0);
+  transform-origin: 100% 100%;
+  transition: transform 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+}
+
+.cv-btn:hover::before {
+  transform-origin: 0 0;
+  transform: scaleX(1);
+}
+
+.cv-btn-light {
+  @apply border-gray-800 text-gray-800 before:bg-gray-800;
+}
+.cv-btn-light:hover span {
+  @apply text-primary-white;
+}
+
+.cv-btn-dark:hover span {
+  @apply text-gray-800;
+}
+
+.cv-btn-dark {
+  @apply border-primary-white text-primary-white before:bg-primary-white;
+}
+
+/* Project button */
+.projects-btn {
+  @apply py-3 px-6 lg:py-4 lg:px-8 text-sm lg:text-base  border rounded  overflow-hidden relative inline-block;
+}
+
+.projects-btn span {
+  position: relative;
+  transition: color 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+}
+
+.projects-btn:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0);
+  transform-origin: 100% 100%;
+  transition: transform 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+}
+
+.projects-btn:hover::before {
+  transform-origin: 0 0;
+  transform: scaleX(1);
+}
+
+.projects-btn-light:hover span {
+  @apply text-primary-white;
+}
+
+.projects-btn-dark:hover span {
+  @apply text-gray-800;
 }
 
 /* Light Mode */
@@ -75,7 +183,7 @@ body {
 }
 
 .navbar-item-light {
-  @apply text-gray-700 hover:text-primary-light-500;
+  @apply text-gray-700;
 }
 
 .navbar-menu-light {
@@ -83,11 +191,11 @@ body {
 }
 /* Home light */
 .home-title-light {
-  @apply text-gray-900;
+  @apply text-primary-white bg-primary-light-500 w-fit p-4 lg:p-8;
 }
 
 .home-subtitle-light {
-  @apply text-gray-700;
+  @apply text-gray-50 bg-gray-800 w-fit p-2 lg:p-4;
 }
 /* Banner Light */
 .banner-light {
@@ -97,7 +205,7 @@ body {
 /* Projects light */
 
 .projects-btn-light {
-  @apply border-gray-800 text-gray-800 rounded hover:text-primary-white hover:bg-gray-800;
+  @apply border-gray-800 text-gray-800 before:bg-gray-800;
 }
 
 .project-num-light {
@@ -152,7 +260,7 @@ body {
 }
 
 .navbar-item-dark {
-  @apply text-gray-100 hover:text-primary-dark-500;
+  @apply text-gray-100;
 }
 .navbar-menu-dark {
   @apply bg-gray-100;
@@ -161,11 +269,11 @@ body {
 /* Home dark */
 
 .home-title-dark {
-  @apply text-primary-white;
+  @apply text-gray-800 bg-primary-dark-500 w-fit p-4 lg:p-8;
 }
 
 .home-subtitle-dark {
-  @apply text-gray-100;
+  @apply text-gray-800 bg-gray-50 w-fit p-2 lg:p-4;
 }
 
 /* Banner dark */
@@ -177,7 +285,7 @@ body {
 /* Projects dark */
 
 .projects-btn-dark {
-  @apply border-primary-white text-primary-white rounded hover:text-gray-800 hover:bg-primary-white;
+  @apply border-primary-white text-primary-white before:bg-primary-white;
 }
 
 .project-num-dark {

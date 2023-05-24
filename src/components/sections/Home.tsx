@@ -2,7 +2,7 @@ import githubLight from "../../assets/icons/github-light.svg";
 import linkedinLight from "../../assets/icons/linkedin-light.svg";
 import githubDark from "../../assets/icons/github-dark.svg";
 import linkedinDark from "../../assets/icons/linkedin-dark.svg";
-
+import cv from "../../assets/pdf/maximilianoperez_cv.pdf";
 interface Props {
   theme: string;
 }
@@ -58,7 +58,12 @@ const Home: React.FC<Props> = ({ theme }) => {
                 </a>
               </li>
               <li>
-                <a href="" target="_blank">
+                <a
+                  href={cv}
+                  download="maximiliano_perez_cv"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
                   <button type="button" className={`cv-btn cv-btn-${theme}`}>
                     <span>Descargar CV</span>
                   </button>

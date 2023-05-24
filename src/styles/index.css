@@ -1,6 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* Fonts */
+
+@font-face {
+  font-family: "Bertioga Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../assets/fonts/BertiogaSans-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Bertioga Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/BertiogaSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Bertioga Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../assets/fonts/BertiogaSans-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Bertioga Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../assets/fonts/BertiogaSans-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Bertioga Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../assets/fonts/BertiogaSans-Bold.ttf") format("truetype");
+}
 
 body {
   @apply font-berty;
@@ -14,16 +47,6 @@ body {
     transform: translateX(-100%);
   }
 }
-
-/* .slider:before,
-.slider:after {
-  position: absolute;
-  top: 0;
-  width: 25%;
-  height: 100%;
-  content: "";
-  z-index: 2;
-} */
 
 .slider-light:before {
   left: 0;

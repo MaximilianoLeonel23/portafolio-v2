@@ -6,6 +6,7 @@ import lacasadelcafe from "../assets/portfolio/lacasadelcafe.png";
 import todolist from "../assets/portfolio/todo-list.png";
 import sunnyside from "../assets/portfolio/sunnyside-agency.png";
 import calculator from "../assets/portfolio/calculator.png";
+import hangman from "../assets/portfolio/hangman.png";
 
 export interface IProject {
   id: string;
@@ -42,6 +43,17 @@ const projectsData: IProject[] = [
   },
   {
     id: "3",
+    title: "Juego del Ahorcado",
+    link: "https://hangman-three-dusky.vercel.app/",
+    shortLink: "hangman-three-dusky.vercel.app",
+    source: hangman,
+    desktop: true,
+    mobile: true,
+    description:
+      "Es el clásico juego del ahorcado, con más de 300 palabras y comentarios de nuestra anfitriona estrella, la muerte, que espera recibirte cuando te bajen de la soga. Asi que...¡Por favor, gana!",
+  },
+  {
+    id: "4",
     title: "ToDo-List",
     link: "https://todo-list-tan-theta.vercel.app/",
     shortLink: "todo-list-tan-theta.vercel.app",
@@ -50,17 +62,6 @@ const projectsData: IProject[] = [
     mobile: true,
     description:
       "Es una lista de tareas donde puedes organizar tu día, mes o año como quieras, creando y actualizando tus deberes.",
-  },
-  {
-    id: "4",
-    title: "Lakeside",
-    link: "https://lakeside-jade.vercel.app",
-    shortLink: "lakeside-jade.vercel.app",
-    source: lakeside,
-    desktop: true,
-    mobile: true,
-    description:
-      "Es una página web ficticia que brinda servicio de hospedaje. Lakeside transmite una experiencia de vacaciones rodeado de naturaleza. La página cuenta con varias secciones y un formulario de contacto para reservas o consultas.",
   },
   {
     id: "5",
@@ -107,6 +108,17 @@ const projectsData: IProject[] = [
     mobile: true,
     description:
       "Esta landing page responsive es la resolución de uno de challenges de frontend mentor.",
+  },
+  {
+    id: "9",
+    title: "Lakeside",
+    link: "https://lakeside-jade.vercel.app",
+    shortLink: "lakeside-jade.vercel.app",
+    source: lakeside,
+    desktop: true,
+    mobile: true,
+    description:
+      "Es una página web ficticia que brinda servicio de hospedaje. Lakeside transmite una experiencia de vacaciones rodeado de naturaleza. La página cuenta con varias secciones y un formulario de contacto para reservas o consultas.",
   },
 ];
 

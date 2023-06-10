@@ -60,14 +60,16 @@ const About: React.FC<Props> = ({ theme }) => {
                   <li>HTML</li>
                   <li>CSS</li>
                   <li>JavaScript</li>
-                  <li>React JS</li>
+                  <li>React</li>
                   <li>Typescript</li>
+                  <li>Next.js</li>
+
                   <li>Git</li>
-                  <li>Sass</li>
                 </ul>
                 <ul
                   className={`about-text-${theme} text-sm lg:text-base leading-6`}
                 >
+                  <li>Sass</li>
                   <li>Tailwind CSS</li>
                   <li>Bootstrap</li>
                   <li>Node.js</li>

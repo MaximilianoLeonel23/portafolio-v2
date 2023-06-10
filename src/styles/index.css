@@ -79,7 +79,7 @@ body {
 }
 
 .blur-background {
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(24px);
 }
 
 /* Components  */
@@ -225,7 +225,7 @@ body {
 }
 
 .navbar-menu-light {
-  @apply bg-gray-800;
+  @apply bg-gray-700;
 }
 /* Home light */
 .home-title-light {

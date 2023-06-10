@@ -49,7 +49,7 @@ const Navbar: React.FC<Props> = ({
           >
             <span
               id="line1"
-              className={`w-6 h-0.5 rounded-lg navbar-menu-${theme} bg-gray-800 transition`}
+              className={`w-6 h-0.5 rounded-lg navbar-menu-${theme} transition`}
             ></span>
             <span
               id="line2"

@@ -13,7 +13,7 @@ const Project: React.FC<Props> = ({ project, theme }) => {
     <article className={`project-border-${theme} border-b py-4`}>
       <div className="columns-1 lg:columns-2 gap-32">
         <div className="flex justify-between">
-          <p className={`w-1/4 project-num-${theme}`}>0{id}</p>
+          <p className={`w-1/4 tracking-widest project-num-${theme}`}>0{id}</p>
           <div className="w-3/4 -mt-2">
             <a href={link} target="_blank">
               <img src={source} className="rounded" loading="lazy" />

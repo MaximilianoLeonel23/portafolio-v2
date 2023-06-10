@@ -1,5 +1,5 @@
-import lightMode from "../../assets/icons/light-mode.svg";
-import darkMode from "../../assets/icons/dark-mode.svg";
+import ModeBtn from "./../atoms/ModeBtn";
+
 interface Props {
   theme: string;
   setTheme: (theme: string) => void;
@@ -12,14 +12,6 @@ const Navbar: React.FC<Props> = ({
   handleShowMenu,
   changeBtn,
 }) => {
-  const handleThemeMode = (): void => {
-    if (theme === "light") {
-      setTheme("dark");
-    } else {
-      setTheme("light");
-    }
-  };
-
   return (
     <nav>
       <ul className="hidden md:flex items-center gap-6">
@@ -43,26 +35,10 @@ const Navbar: React.FC<Props> = ({
             <span className="hover-text">Sobre mi</span>
           </a>
         </li>
-        <li className="flex items-center justify-center h-6 w-6">
-          <a onClick={handleThemeMode} className="cursor-pointer">
-            {theme === "light" ? (
-              <img src={lightMode} className="w-full h-full" />
-            ) : (
-              <img src={darkMode} className="w-full h-full" />
-            )}
-          </a>
-        </li>
+        <ModeBtn theme={theme} setTheme={setTheme} />
       </ul>
       <ul className="flex md:hidden items-center gap-6">
-        <li className="flex items-center justify-center h-6 lg:h-8 w-6 lg:w-8">
-          <a onClick={handleThemeMode} className="cursor-pointer">
-            {theme === "light" ? (
-              <img src={lightMode} className="w-full h-full" />
-            ) : (
-              <img src={darkMode} className="w-full h-full" />
-            )}
-          </a>
-        </li>
+        <ModeBtn theme={theme} setTheme={setTheme} />
         <li>
           <div
             className="flex flex-col gap-y-2 z-10"

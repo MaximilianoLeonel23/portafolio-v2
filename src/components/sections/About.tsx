@@ -63,7 +63,6 @@ const About: React.FC<Props> = ({ theme }) => {
                   <li>React</li>
                   <li>Typescript</li>
                   <li>Next.js</li>
-
                   <li>Git</li>
                 </ul>
                 <ul
@@ -75,6 +74,7 @@ const About: React.FC<Props> = ({ theme }) => {
                   <li>Node.js</li>
                   <li>Express.js</li>
                   <li>MongoDB</li>
+                  <li>MySQL</li>
                   <li>Jest</li>
                 </ul>
               </div>

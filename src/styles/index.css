@@ -172,7 +172,7 @@ body {
 
 /* Project button */
 .projects-btn {
-  @apply py-3 px-6 lg:py-4 lg:px-8 text-sm lg:text-base  border rounded  overflow-hidden relative inline-block;
+  @apply py-2 px-4  text-sm  border rounded  overflow-hidden relative inline-block;
 }
 
 .projects-btn span {
@@ -209,7 +209,7 @@ body {
 /* Light Mode */
 
 .blackout-light {
-  @apply bg-primary-white;
+  @apply bg-gray-50;
 }
 /* Header light */
 .header-light {
@@ -237,7 +237,7 @@ body {
 }
 /* Banner Light */
 .banner-light {
-  @apply bg-gray-50;
+  @apply bg-gray-100;
 }
 
 /* Projects light */

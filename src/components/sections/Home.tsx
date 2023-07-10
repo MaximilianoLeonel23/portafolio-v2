@@ -20,7 +20,7 @@ const Home: React.FC<Props> = ({ theme }) => {
             <h1
               className={`font-bold text-5xl lg:text-7xl home-title-${theme} tracking-wide`}
             >
-              Frontend Developer
+              Fullstack Developer
             </h1>
             <ul className="flex items-center gap-x-4 pt-4">
               <li>

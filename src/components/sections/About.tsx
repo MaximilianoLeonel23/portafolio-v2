@@ -1,4 +1,4 @@
-import photo from "../../assets/about/photo.jpg";
+import photo from "../../assets/about/profile.png";
 import githubLight from "../../assets/icons/github-light.svg";
 import linkedinLight from "../../assets/icons/linkedin-light.svg";
 import githubDark from "../../assets/icons/github-dark.svg";
@@ -9,10 +9,14 @@ interface Props {
 }
 const About: React.FC<Props> = ({ theme }) => {
   return (
-    <section id="about" className="container py-16">
-      <div className="flex flex-col-reverse lg:flex-row gap-y-16 gap-x-16">
-        <div className="flex items-start lg:items-end justify-start lg:justify-center">
-          <img src={photo} className="w-2/3 lg:w-2/5 pb-8 drop-shadow-lg" />
+    <section id="about" className="container py-24">
+      <div className="flex flex-col-reverse lg:flex-row gap-y-16 gap-x-32">
+        <div className={`hidden sm:flex items-start lg:justify-center`}>
+          <div
+            className={`w-1/2 sm:w-auto border-4 about-photo-${theme} p-2 rounded-full`}
+          >
+            <img src={photo} className="rounded-full" />
+          </div>
         </div>
         <div>
           <div className="flex flex-col gap-y-8">

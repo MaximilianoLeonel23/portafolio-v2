@@ -283,6 +283,10 @@ body {
 .about-text-light {
   @apply text-gray-500;
 }
+
+.about-photo-light {
+  @apply border-primary-light-500;
+}
 /* Dark Mode */
 
 .blackout-dark {
@@ -361,4 +365,8 @@ body {
 
 .about-text-dark {
   @apply text-gray-400;
+}
+
+.about-photo-dark {
+  @apply border-primary-dark-500;
 }

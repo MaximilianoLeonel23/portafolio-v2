@@ -7,7 +7,7 @@ import todolist from "../assets/portfolio/todo-list.png";
 import sunnyside from "../assets/portfolio/sunnyside-agency.png";
 import calculator from "../assets/portfolio/calculator.png";
 import hangman from "../assets/portfolio/hangman.png";
-
+import pokeapp from "../assets/portfolio/pokeapp.png";
 export interface IProject {
   id: string;
   title: string;
@@ -18,17 +18,18 @@ export interface IProject {
   mobile: boolean;
   description: string;
 }
+
 const projectsData: IProject[] = [
   {
     id: "1",
-    title: "Calculator App",
-    link: "https://calculator-app-pink-sigma.vercel.app/",
-    shortLink: "calculator-app-pink-sigma.vercel.app",
-    source: calculator,
+    title: "Pokemon App",
+    link: "https://pokemon-app-puce-two.vercel.app/",
+    shortLink: "pokemon-app-puce-two.vercel.app",
+    source: pokeapp,
     desktop: true,
     mobile: true,
     description:
-      "Esta calculadora forma parte de un desafío de frontend mentor y permite realizar las operaciones básicas.",
+      "Es una aplicación que utiliza la API de PokéAPI para simular una pokedex, con los más de 1000 pokemon existentes, con sus estadísticas, movimientos y evoluciones. También se puede acceder a información sobre los tipos pokemon, sus abilidades y los pokedex regionales",
   },
   {
     id: "2",
@@ -54,6 +55,17 @@ const projectsData: IProject[] = [
   },
   {
     id: "4",
+    title: "Calculator App",
+    link: "https://calculator-app-pink-sigma.vercel.app/",
+    shortLink: "calculator-app-pink-sigma.vercel.app",
+    source: calculator,
+    desktop: true,
+    mobile: true,
+    description:
+      "Esta calculadora forma parte de un desafío de frontend mentor y permite realizar las operaciones básicas.",
+  },
+  {
+    id: "5",
     title: "ToDo-List",
     link: "https://todo-list-tan-theta.vercel.app/",
     shortLink: "todo-list-tan-theta.vercel.app",
@@ -62,17 +74,6 @@ const projectsData: IProject[] = [
     mobile: true,
     description:
       "Es una lista de tareas donde puedes organizar tu día, mes o año como quieras, creando y actualizando tus deberes.",
-  },
-  {
-    id: "5",
-    title: "Criptavisor",
-    link: "https://criptavisor.vercel.app",
-    shortLink: "criptavisor.vercel.app",
-    source: criptavisor,
-    desktop: true,
-    mobile: false,
-    description:
-      "Es una aplicación que permite hacer un seguimiento de las criptomonedas más codiciadas del momento. Con actualizaciones permanentes, rankings y estadísticas podrás comparar y tomar futuras decisiones en el mundo de las criptomonedas. Asímismo, la aplicación ofrece un canal a las últimas noticias sobre el rubro.",
   },
   {
     id: "6",
@@ -119,6 +120,17 @@ const projectsData: IProject[] = [
     mobile: true,
     description:
       "Es una página web ficticia que brinda servicio de hospedaje. Lakeside transmite una experiencia de vacaciones rodeado de naturaleza. La página cuenta con varias secciones y un formulario de contacto para reservas o consultas.",
+  },
+  {
+    id: "10",
+    title: "Criptavisor",
+    link: "https://criptavisor.vercel.app",
+    shortLink: "criptavisor.vercel.app",
+    source: criptavisor,
+    desktop: true,
+    mobile: false,
+    description:
+      "Es una aplicación que permite hacer un seguimiento de las criptomonedas más codiciadas del momento. Con actualizaciones permanentes, rankings y estadísticas podrás comparar y tomar futuras decisiones en el mundo de las criptomonedas. Asímismo, la aplicación ofrece un canal a las últimas noticias sobre el rubro.",
   },
 ];
 

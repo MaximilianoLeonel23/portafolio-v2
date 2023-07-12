@@ -10,7 +10,7 @@ const Logo: React.FC<Props> = ({ theme }) => {
       <div className="hidden sm:inline">
         <p className={`font-medium text-sm mail-${theme} navbar-item`}>
           <span className="main-text">Maximiliano Leonel Pérez</span>
-          <span className="hover-text">Maximiliano Leonel Pérez</span>
+          <span className="hover-text">Fullstack Developer</span>
         </p>
       </div>
     </div>

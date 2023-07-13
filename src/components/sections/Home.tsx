@@ -3,10 +3,13 @@ import linkedinLight from "../../assets/icons/linkedin-light.svg";
 import githubDark from "../../assets/icons/github-dark.svg";
 import linkedinDark from "../../assets/icons/linkedin-dark.svg";
 import cv from "../../assets/pdf/maximilianoperez_cv.pdf";
+import { useLanguage } from "../../context/language.context";
 interface Props {
   theme: string;
 }
 const Home: React.FC<Props> = ({ theme }) => {
+  const { language, switchLanguage } = useLanguage();
+
   return (
     <section id="home" className="h-screen w-full header finisher-header">
       <div className="container">
@@ -63,10 +66,19 @@ const Home: React.FC<Props> = ({ theme }) => {
                   download="maximiliano_perez_cv"
                   rel="noopener noreferrer"
                   target="_blank"
+                  className={`cv-btn cv-btn-${theme}`}
                 >
-                  <button type="button" className={`cv-btn cv-btn-${theme}`}>
-                    <span>Descargar CV</span>
-                  </button>
+                  <span>
+                    {language === "es" ? "Descargar CV" : "Download CV"}
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  className={`cv-btn cv-btn-${theme}`}
+                  onClick={switchLanguage}
+                >
+                  <span>{language.toUpperCase()}</span>
                 </a>
               </li>
             </ul>

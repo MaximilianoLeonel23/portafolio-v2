@@ -5,6 +5,7 @@ import linkedinLight from "../../assets/icons/linkedin-light.svg";
 import githubDark from "../../assets/icons/github-dark.svg";
 import linkedinDark from "../../assets/icons/linkedin-dark.svg";
 import { useState } from "react";
+import { useLanguage } from "../../context/language.context";
 
 interface Props {
   theme: string;
@@ -12,7 +13,7 @@ interface Props {
 }
 const Header: React.FC<Props> = ({ theme, setTheme }) => {
   const [showMenu, setShowMenu] = useState<boolean>(false);
-
+  const { language } = useLanguage();
   const handleShowMenu = (): void => {
     setShowMenu(!showMenu);
   };
@@ -56,9 +57,17 @@ const Header: React.FC<Props> = ({ theme, setTheme }) => {
                 }}
                 className="font-semibold text-lg"
               >
-                {" "}
-                <span className="main-text">Inicio</span>
-                <span className="hover-text">Inicio</span>
+                {language === "es" ? (
+                  <>
+                    <span className="main-text">Inicio</span>
+                    <span className="hover-text">Inicio</span>
+                  </>
+                ) : (
+                  <>
+                    <span className="main-text">Home</span>
+                    <span className="hover-text">Home</span>
+                  </>
+                )}
               </a>
             </li>
             <li className={`navbar-item navbar-item-${theme}`}>
@@ -70,9 +79,17 @@ const Header: React.FC<Props> = ({ theme, setTheme }) => {
                 }}
                 className="font-semibold text-lg"
               >
-                {" "}
-                <span className="main-text">Proyectos</span>
-                <span className="hover-text">Proyectos</span>
+                {language === "es" ? (
+                  <>
+                    <span className="main-text">Proyectos</span>
+                    <span className="hover-text">Proyectos</span>
+                  </>
+                ) : (
+                  <>
+                    <span className="main-text">Projects</span>
+                    <span className="hover-text">Projects</span>
+                  </>
+                )}
               </a>
             </li>
             <li className={`navbar-item navbar-item-${theme}`}>
@@ -84,15 +101,24 @@ const Header: React.FC<Props> = ({ theme, setTheme }) => {
                 }}
                 className="font-semibold text-lg"
               >
-                <span className="main-text">Sobre mi</span>
-                <span className="hover-text">Sobre mi</span>
+                {language === "es" ? (
+                  <>
+                    <span className="main-text">Sobre mi</span>
+                    <span className="hover-text">Sobre mi</span>
+                  </>
+                ) : (
+                  <>
+                    <span className="main-text">About me</span>
+                    <span className="hover-text">About me</span>
+                  </>
+                )}
               </a>
             </li>
           </ul>
           <div className="h-px w-full bg-primary-light-500 my-2"></div>
           <div className="container flex items-center gap-x-4 py-4">
             <h4 className={`about-title-${theme} font-semibold  text-lg`}>
-              Redes sociales
+              {language === "es" ? "Redes sociales" : "Socials"}
             </h4>
             <ul className="flex items-center gap-x-4">
               <li>

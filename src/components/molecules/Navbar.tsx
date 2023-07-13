@@ -1,3 +1,4 @@
+import { useLanguage } from "../../context/language.context";
 import ModeBtn from "./../atoms/ModeBtn";
 
 interface Props {
@@ -12,27 +13,54 @@ const Navbar: React.FC<Props> = ({
   handleShowMenu,
   changeBtn,
 }) => {
+  const { language } = useLanguage();
   return (
     <nav>
       <ul className="hidden md:flex items-center gap-6">
         <li className={`navbar-item navbar-item-${theme}`}>
           <a href="#home">
             {" "}
-            <span className="main-text">Inicio</span>
-            <span className="hover-text">Inicio</span>
+            {language === "es" ? (
+              <>
+                <span className="main-text">Inicio</span>
+                <span className="hover-text">Inicio</span>
+              </>
+            ) : (
+              <>
+                <span className="main-text">Home</span>
+                <span className="hover-text">Home</span>
+              </>
+            )}
           </a>
         </li>
         <li className={`navbar-item navbar-item-${theme}`}>
           <a href="#projects">
-            {" "}
-            <span className="main-text">Proyectos</span>
-            <span className="hover-text">Proyectos</span>
+            {language === "es" ? (
+              <>
+                <span className="main-text">Proyectos</span>
+                <span className="hover-text">Proyectos</span>
+              </>
+            ) : (
+              <>
+                <span className="main-text">Projects</span>
+                <span className="hover-text">Projects</span>
+              </>
+            )}
           </a>
         </li>
         <li className={`navbar-item navbar-item-${theme}`}>
           <a href="#about">
-            <span className="main-text">Sobre mi</span>
-            <span className="hover-text">Sobre mi</span>
+            {language === "es" ? (
+              <>
+                <span className="main-text">Sobre mi</span>
+                <span className="hover-text">Sobre mi</span>
+              </>
+            ) : (
+              <>
+                <span className="main-text">About me</span>
+                <span className="hover-text">About me</span>
+              </>
+            )}
           </a>
         </li>
         <ModeBtn theme={theme} setTheme={setTheme} />

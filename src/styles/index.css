@@ -129,7 +129,7 @@ body {
 }
 /* CV button */
 .cv-btn {
-  @apply py-2 px-4 text-sm  border rounded  overflow-hidden relative inline-block;
+  @apply py-2 px-4 text-sm  border rounded  overflow-hidden relative inline-block cursor-pointer;
 }
 
 .cv-btn span {

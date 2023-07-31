@@ -4,6 +4,8 @@ import githubDark from "../../assets/icons/github-dark.svg";
 import linkedinDark from "../../assets/icons/linkedin-dark.svg";
 import cv from "../../assets/pdf/maximilianoperez_cv.pdf";
 import { useLanguage } from "../../context/language.context";
+import { motion } from "framer-motion";
+
 interface Props {
   theme: string;
 }
@@ -11,20 +13,19 @@ const Home: React.FC<Props> = ({ theme }) => {
   const { language, switchLanguage } = useLanguage();
 
   return (
-    <section id="home" className="h-screen w-full header finisher-header">
-      <div className="container">
-        <div className="relative h-full">
+    <section id="home" className="h-screen w-full">
+      <div className="container flex mx-auto gap-8">
+        <div>
           <div className="flex flex-col pt-32 lg:pt-40">
-            <p
-              className={`text-sm lg:text-base tracking-wide home-subtitle-${theme}`}
-            >
-              Maximiliano Leonel Pérez
-            </p>
-            <h1
-              className={`font-bold text-5xl lg:text-7xl home-title-${theme} tracking-wide`}
+            <motion.h1
+              whileInView={{ x: 0, opacity: 1 }}
+              initial={{ x: -20, opacity: 0 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: true }}
+              className={`home-title-${theme} font-extrabold text-7xl`}
             >
               Fullstack Developer
-            </h1>
+            </motion.h1>
             <ul className="flex items-center gap-x-4 pt-4">
               <li>
                 <a

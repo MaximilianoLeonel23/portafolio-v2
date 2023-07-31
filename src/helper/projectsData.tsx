@@ -1,4 +1,3 @@
-import lakeside from "../assets/portfolio/lakeside.png";
 import climo from "../assets/portfolio/climo.png";
 import forAllmart from "../assets/portfolio/forAllmart.png";
 import criptavisor from "../assets/portfolio/criptavisor.png";
@@ -8,6 +7,8 @@ import sunnyside from "../assets/portfolio/sunnyside-agency.png";
 import calculator from "../assets/portfolio/calculator.png";
 import hangman from "../assets/portfolio/hangman.png";
 import pokeapp from "../assets/portfolio/pokeapp.png";
+import readinglist from "../assets/portfolio/reading-list.png";
+
 export interface IProject {
   id: string;
   title: string;
@@ -17,6 +18,7 @@ export interface IProject {
   desktop: boolean;
   mobile: boolean;
   description: string;
+  skills: string[];
 }
 
 export const projectsEs: IProject[] = [
@@ -28,6 +30,7 @@ export const projectsEs: IProject[] = [
     source: pokeapp,
     desktop: true,
     mobile: true,
+    skills: ["JavaScript", "React", "Tailwind CSS", "Next.js"],
     description:
       "Es una aplicación que utiliza la API de PokéAPI para simular una pokedex, con los más de 1000 pokemon existentes, con sus estadísticas, movimientos y evoluciones. También se puede acceder a información sobre los tipos pokemon, sus abilidades y los pokedex regionales",
   },
@@ -39,6 +42,7 @@ export const projectsEs: IProject[] = [
     source: forAllmart,
     desktop: true,
     mobile: true,
+    skills: ["JavaScript", "React", "Tailwind CSS"],
     description:
       "Es un ecommerce creado con la API de EDteam. Tiene múltiples funcionalidades como login, registrarse, crear, editar y eliminar productos, entre otras. Además utiliza la API de PayPal para realizar pagos y registrar compras y ventas.",
   },
@@ -50,6 +54,8 @@ export const projectsEs: IProject[] = [
     source: hangman,
     desktop: true,
     mobile: true,
+    skills: ["JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS"],
+
     description:
       "Es el clásico juego del ahorcado, con más de 300 palabras y comentarios de nuestra anfitriona estrella, la muerte, que espera recibirte cuando te bajen de la soga. Asi que...¡Por favor, gana!",
   },
@@ -61,6 +67,8 @@ export const projectsEs: IProject[] = [
     source: calculator,
     desktop: true,
     mobile: true,
+    skills: ["JavaScript", "Typescript", "React", "Tailwind CSS"],
+
     description:
       "Esta calculadora forma parte de un desafío de frontend mentor y permite realizar las operaciones básicas.",
   },
@@ -72,6 +80,8 @@ export const projectsEs: IProject[] = [
     source: todolist,
     desktop: true,
     mobile: true,
+    skills: ["CSS", "JavaScript", "Typescript", "React", "Bootstrap"],
+
     description:
       "Es una lista de tareas donde puedes organizar tu día, mes o año como quieras, creando y actualizando tus deberes.",
   },
@@ -83,6 +93,8 @@ export const projectsEs: IProject[] = [
     source: climo,
     desktop: true,
     mobile: true,
+    skills: ["JavaScript", "React", "Tailwind CSS"],
+
     description:
       "Es una aplicación que permite chequear el clima en la ciudad de Rosario, Argentina. Climo muestra desde las condiciones actuales hasta los siguientes 5 días. Se sirve de la API de AccuWeather.",
   },
@@ -95,6 +107,8 @@ export const projectsEs: IProject[] = [
     source: lacasadelcafe,
     desktop: true,
     mobile: true,
+    skills: ["HTML", "CSS", "JavaScript", "Sass", "Bootstrap"],
+
     description:
       "Es una página que muestra el menú o carta de una cafetería, dónde puedes tomarte un delicioso café de especialidad o merendar unas ricas medialunas con jamón, queso o lo que que más te guste. Es completamente personalizable y accesible mediante un código QR.",
   },
@@ -107,19 +121,22 @@ export const projectsEs: IProject[] = [
     source: sunnyside,
     desktop: true,
     mobile: true,
+    skills: ["JavaScript", "React", "Tailwind CSS"],
+
     description:
       "Esta landing page responsive es la resolución de uno de challenges de frontend mentor.",
   },
   {
     id: "9",
-    title: "Lakeside",
-    link: "https://lakeside-jade.vercel.app",
-    shortLink: "lakeside-jade.vercel.app",
-    source: lakeside,
+    title: "Reading List",
+    link: "https://pruebas-tecnicas-reading-list.vercel.app/",
+    shortLink: "pruebas-tecnicas-reading-list.app",
+    source: readinglist,
     desktop: true,
     mobile: true,
+    skills: ["JavaScript", "TypeScript", "React", "Tailwind CSS", "Cypress"],
     description:
-      "Es una página web ficticia que brinda servicio de hospedaje. Lakeside transmite una experiencia de vacaciones rodeado de naturaleza. La página cuenta con varias secciones y un formulario de contacto para reservas o consultas.",
+      "Esta reading list es la resolución de una prueba técnica. Consiste en una lista de lectura, que permite visualizar libros, agregarlos o desagregarlos del cátalogo hacia la lista de lectura, filtrado por páginas, género, título o autor.",
   },
   {
     id: "10",
@@ -129,6 +146,8 @@ export const projectsEs: IProject[] = [
     source: criptavisor,
     desktop: true,
     mobile: false,
+    skills: ["JavaScript", "React", "Sass"],
+
     description:
       "Es una aplicación que permite hacer un seguimiento de las criptomonedas más codiciadas del momento. Con actualizaciones permanentes, rankings y estadísticas podrás comparar y tomar futuras decisiones en el mundo de las criptomonedas. Asímismo, la aplicación ofrece un canal a las últimas noticias sobre el rubro.",
   },
@@ -143,6 +162,7 @@ export const projectsEn: IProject[] = [
     source: pokeapp,
     desktop: true,
     mobile: true,
+    skills: ["JavaScript", "React", "Tailwind CSS", "Next.js"],
     description:
       "It is an application that uses the PokéAPI to simulate a Pokédex, featuring over 1000 existing Pokémon with their statistics, moves, and evolutions. It also provides information about Pokémon types, abilities, and regional Pokédexes.",
   },
@@ -154,6 +174,7 @@ export const projectsEn: IProject[] = [
     source: forAllmart,
     desktop: true,
     mobile: true,
+    skills: ["JavaScript", "React", "Tailwind CSS"],
     description:
       "This is an e-commerce website created using the EDteam API. It has multiple functionalities such as login, registration, creating, editing, and deleting products, among others. Additionally, it utilizes the PayPal API for processing payments and registering purchases and sales.",
   },
@@ -165,9 +186,11 @@ export const projectsEn: IProject[] = [
     source: hangman,
     desktop: true,
     mobile: true,
+    skills: ["JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS"],
     description:
       "This is the classic hangman game, featuring over 300 words and comments from our star host, the Grim Reaper, who eagerly awaits your arrival when you're hanged. So please... win, if you can!",
   },
+
   {
     id: "4",
     title: "Calculator App",
@@ -176,9 +199,11 @@ export const projectsEn: IProject[] = [
     source: calculator,
     desktop: true,
     mobile: true,
+    skills: ["JavaScript", "TypeScript", "React", "Tailwind CSS"],
     description:
       "This calculator is part of a Frontend Mentor challenge and allows performing basic operations.",
   },
+
   {
     id: "5",
     title: "ToDo-List",
@@ -187,9 +212,11 @@ export const projectsEn: IProject[] = [
     source: todolist,
     desktop: true,
     mobile: true,
+    skills: ["CSS", "JavaScript", "TypeScript", "React", "Bootstrap"],
     description:
       "This is a task list where you can organize your day, month, or year as you wish, creating and updating your tasks.",
   },
+
   {
     id: "6",
     title: "Climo",
@@ -198,9 +225,11 @@ export const projectsEn: IProject[] = [
     source: climo,
     desktop: true,
     mobile: true,
+    skills: ["JavaScript", "React", "Tailwind CSS"],
     description:
       "This is an application that allows checking the weather in the city of Rosario, Argentina. Climo displays the conditions from today to the next 5 days. It relies on the AccuWeather API.",
   },
+
   {
     id: "7",
     title: "Cafeteria Menu",
@@ -209,9 +238,11 @@ export const projectsEn: IProject[] = [
     source: lacasadelcafe,
     desktop: true,
     mobile: true,
+    skills: ["HTML", "CSS", "JavaScript", "Sass", "Bootstrap"],
     description:
       "This is a website that displays the menu of a café, where you can enjoy a delicious specialty coffee or indulge in some tasty ham and cheese croissants or any other fillings you prefer. The menu is fully customizable and accessible via a QR code.",
   },
+
   {
     id: "8",
     title: "Sunnyside Agency",
@@ -220,20 +251,24 @@ export const projectsEn: IProject[] = [
     source: sunnyside,
     desktop: true,
     mobile: true,
+    skills: ["JavaScript", "React", "Tailwind CSS"],
     description:
       "This responsive landing page is the solution to one of the frontend mentor challenges.",
   },
+
   {
     id: "9",
-    title: "Lakeside",
-    link: "https://lakeside-jade.vercel.app",
-    shortLink: "lakeside-jade.vercel.app",
-    source: lakeside,
+    title: "Reading List",
+    link: "https://pruebas-tecnicas-reading-list.vercel.app/",
+    shortLink: "pruebas-tecnicas-reading-list.app",
+    source: readinglist,
     desktop: true,
     mobile: true,
+    skills: ["JavaScript", "TypeScript", "React", "Tailwind CSS", "Cypress"],
     description:
-      "This is a fictional website that provides lodging services. Lakeside offers a vacation experience surrounded by nature. The website features several sections and a contact form for reservations or inquiries.",
+      "This reading list is the resolution of a technical test. It consists of a reading list, which allows visualizing books, adding or removing them from the catalog to the reading list, filtering by pages, genre, and title.",
   },
+
   {
     id: "10",
     title: "Criptavisor",
@@ -242,6 +277,7 @@ export const projectsEn: IProject[] = [
     source: criptavisor,
     desktop: true,
     mobile: false,
+    skills: ["JavaScript", "React", "Sass"],
     description:
       "This is an application that allows you to track the most coveted cryptocurrencies of the moment. With real-time updates, rankings, and statistics, you can compare and make future decisions in the world of cryptocurrencies. Additionally, the application provides a channel to the latest news in the field.",
   },

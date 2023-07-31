@@ -82,8 +82,6 @@ body {
   backdrop-filter: blur(24px);
 }
 
-/* Components  */
-
 /* Mode button */
 
 .mode-btn--shadow {
@@ -206,6 +204,14 @@ body {
   @apply text-gray-800;
 }
 
+.tag-light {
+  @apply text-gray-400 bg-gray-100;
+}
+
+.tag-dark {
+  @apply bg-gray-700 text-gray-400;
+}
+
 /* Light Mode */
 
 .blackout-light {
@@ -229,7 +235,7 @@ body {
 }
 /* Home light */
 .home-title-light {
-  @apply text-primary-white bg-primary-light-500 w-fit p-4 lg:p-8;
+  @apply text-primary-light-500;
 }
 
 .home-subtitle-light {
@@ -311,7 +317,7 @@ body {
 /* Home dark */
 
 .home-title-dark {
-  @apply text-gray-800 bg-primary-dark-500 w-fit p-4 lg:p-8;
+  @apply text-primary-dark-500;
 }
 
 .home-subtitle-dark {

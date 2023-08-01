@@ -127,7 +127,7 @@ body {
 }
 /* CV button */
 .cv-btn {
-  @apply py-2 px-4 text-sm  border rounded  overflow-hidden relative inline-block cursor-pointer;
+  @apply py-1.5 px-3 text-sm  border rounded  overflow-hidden relative inline-block cursor-pointer;
 }
 
 .cv-btn span {
@@ -154,7 +154,7 @@ body {
 }
 
 .cv-btn-light {
-  @apply border-gray-800 text-gray-800 before:bg-gray-800;
+  @apply border-primary-light-500 text-primary-light-500 before:bg-primary-light-500;
 }
 .cv-btn-light:hover span {
   @apply text-gray-50;
@@ -165,7 +165,7 @@ body {
 }
 
 .cv-btn-dark {
-  @apply border-gray-50 text-gray-50 before:bg-gray-50;
+  @apply border-primary-dark-500 text-primary-dark-500 before:bg-primary-dark-500;
 }
 
 /* Project button */

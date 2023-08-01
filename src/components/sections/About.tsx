@@ -4,6 +4,7 @@ import linkedinLight from "../../assets/icons/linkedin-light.svg";
 import githubDark from "../../assets/icons/github-dark.svg";
 import linkedinDark from "../../assets/icons/linkedin-dark.svg";
 import { useLanguage } from "../../context/language.context";
+import { motion } from "framer-motion";
 
 interface Props {
   theme: string;
@@ -22,7 +23,13 @@ const About: React.FC<Props> = ({ theme }) => {
         </div>
         <div>
           <div className="flex flex-col gap-y-8">
-            <div className="flex flex-col gap-y-4">
+            <motion.div
+              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: 25 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="flex flex-col gap-y-4"
+            >
               <h4
                 className={`about-title-${theme} font-semibold  text-lg lg:text-xl`}
               >
@@ -35,8 +42,14 @@ const About: React.FC<Props> = ({ theme }) => {
                   ? "Soy una persona disciplinada, organizada y eficiente en mi trabajo. Tengo paciencia y buena predisposición para aprender nuevas herramientas. Me gustan los desafíos intelectuales que ponen a prueba mi capacidad de resolución de problemas. Me considero sobre todo un estudiante autodidacta"
                   : "I am a disciplined, organized, and efficient person in my work. I have patience and a willingness to learn new tools. I enjoy intellectual challenges that test my problem-solving abilities. Above all, I consider myself a self-taught student."}
               </p>
-            </div>
-            <div className="flex flex-col gap-y-4">
+            </motion.div>
+            <motion.div
+              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: 25 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="flex flex-col gap-y-4"
+            >
               <h4
                 className={`about-title-${theme} font-semibold  text-lg lg:text-xl`}
               >
@@ -65,8 +78,14 @@ const About: React.FC<Props> = ({ theme }) => {
                   </>
                 )}
               </ul>
-            </div>
-            <div className="flex flex-col gap-y-4">
+            </motion.div>
+            <motion.div
+              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: 25 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="flex flex-col gap-y-4"
+            >
               <h4
                 className={`about-title-${theme} font-semibold  text-lg lg:text-xl`}
               >
@@ -97,8 +116,14 @@ const About: React.FC<Props> = ({ theme }) => {
                   <li>Jest</li>
                 </ul>
               </div>
-            </div>
-            <div className="flex items-center gap-x-4">
+            </motion.div>
+            <motion.div
+              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: 25 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="flex items-center gap-x-4"
+            >
               <h4
                 className={`about-title-${theme} font-semibold  text-lg lg:text-xl`}
               >
@@ -140,7 +165,7 @@ const About: React.FC<Props> = ({ theme }) => {
                   </a>
                 </li>
               </ul>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

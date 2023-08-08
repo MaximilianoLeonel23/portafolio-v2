@@ -111,9 +111,11 @@ const About: React.FC<Props> = ({ theme }) => {
                   <li>Bootstrap</li>
                   <li>Node.js</li>
                   <li>Express.js</li>
+                  <li>Firebase</li>
                   <li>MongoDB</li>
                   <li>MySQL</li>
                   <li>Jest</li>
+                  <li>Cypress</li>
                 </ul>
               </div>
             </motion.div>

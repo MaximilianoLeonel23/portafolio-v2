@@ -8,6 +8,8 @@ import calculator from "../assets/portfolio/calculator.png";
 import hangman from "../assets/portfolio/hangman.png";
 import pokeapp from "../assets/portfolio/pokeapp.png";
 import readinglist from "../assets/portfolio/reading-list.png";
+import unsplash from "../assets/portfolio/unsplash.png";
+import imageuploader from "../assets/portfolio/image-uploader.png";
 
 export interface IProject {
   id: string;
@@ -151,6 +153,32 @@ export const projectsEs: IProject[] = [
     description:
       "Es una aplicación que permite hacer un seguimiento de las criptomonedas más codiciadas del momento. Con actualizaciones permanentes, rankings y estadísticas podrás comparar y tomar futuras decisiones en el mundo de las criptomonedas. Asímismo, la aplicación ofrece un canal a las últimas noticias sobre el rubro.",
   },
+  {
+    id: "11",
+    title: "My Unsplash App",
+    link: "https://my-unsplash-app-three.vercel.app/",
+    shortLink: "my-unsplash-app-three.vercel.app",
+    source: unsplash,
+    desktop: true,
+    mobile: false,
+    skills: ["Typescript", "React", "Next.js", "Tailwind CSS", "Firebase"],
+
+    description:
+      "Esta es una aplicación similar a Unsplash, donde podes subir tus fotos y compartirlas en un muro público con estilos tipo masonry.",
+  },
+  {
+    id: "12",
+    title: "Image Uploader",
+    link: "https://image-uploader-tau-ten.vercel.app/",
+    shortLink: "image-uploader-tau-ten.vercel.app",
+    source: imageuploader,
+    desktop: true,
+    mobile: false,
+    skills: ["Typescript", "React", "Tailwind CSS", "Node.js", "Express.js"],
+
+    description:
+      "¡En esta app podés subir tus imagenes en formato PNG o JPG a una URL pública y utilizarla luego como más quieras!",
+  },
 ];
 
 export const projectsEn: IProject[] = [
@@ -280,5 +308,29 @@ export const projectsEn: IProject[] = [
     skills: ["JavaScript", "React", "Sass"],
     description:
       "This is an application that allows you to track the most coveted cryptocurrencies of the moment. With real-time updates, rankings, and statistics, you can compare and make future decisions in the world of cryptocurrencies. Additionally, the application provides a channel to the latest news in the field.",
+  },
+  {
+    id: "11",
+    title: "My Unsplash App",
+    link: "https://my-unsplash-app-three.vercel.app/",
+    shortLink: "my-unsplash-app-three.vercel.app",
+    source: unsplash,
+    desktop: true,
+    mobile: false,
+    skills: ["Typescript", "React", "Next.js", "Tailwind CSS", "Firebase"],
+    description:
+      "This is an application similar to Unsplash, where you can upload your photos and share them on a public wall with masonry-style layouts.",
+  },
+  {
+    id: "12",
+    title: "Image Uploader",
+    link: "https://image-uploader-tau-ten.vercel.app/",
+    shortLink: "image-uploader-tau-ten.vercel.app",
+    source: imageuploader,
+    desktop: true,
+    mobile: false,
+    skills: ["Typescript", "React", "Tailwind CSS", "Node.js", "Express.js"],
+    description:
+      "In this app, you can upload your images in PNG or JPG format to a public URL and then use them however you like!",
   },
 ];

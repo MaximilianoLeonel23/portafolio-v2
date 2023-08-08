@@ -75,7 +75,7 @@ body {
 
 .slider-track {
   display: inline-block;
-  animation: 40s slide infinite linear;
+  animation: 25s slide infinite linear;
 }
 
 .blur-background {

@@ -10,6 +10,10 @@ import typescript from "../../assets/devskills/typescript.svg";
 import nodejs from "../../assets/devskills/nodejs.svg";
 import jest from "../../assets/devskills/jest.svg";
 import mongodb from "../../assets/devskills/mongodb.svg";
+import firebase from "../../assets/devskills/firebase.svg";
+import cypress from "../../assets/devskills/cypress.svg";
+import mysql from "../../assets/devskills/mysql.svg";
+
 import Tech from "../molecules/Tech.js";
 
 interface Props {
@@ -27,8 +31,11 @@ const Banner: React.FC<Props> = ({ theme }) => {
     bootstrap,
     typescript,
     nodejs,
+    mysql,
     mongodb,
+    firebase,
     jest,
+    cypress,
   ];
 
   return (

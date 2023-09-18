@@ -11,6 +11,7 @@ import readinglist from '../assets/portfolio/reading-list.png';
 import unsplash from '../assets/portfolio/unsplash.png';
 import imageuploader from '../assets/portfolio/image-uploader.png';
 import catwiki from '../assets/portfolio/catwiki.png';
+import klinika from '../assets/portfolio/klinika.png';
 
 export interface IProject {
 	id: string;
@@ -192,6 +193,29 @@ export const projectsEs: IProject[] = [
 		description:
 			'Esta es una aplicación que te permite conocer más sobre los gatos: sus características, comportamientos, habitos, etc.',
 	},
+	{
+		id: '14',
+		title: 'Klinika',
+		link: 'https://mecharcovz-fe.vercel.app/',
+		shortLink: 'mecharcovz-fe.vercel.app',
+		source: klinika,
+		desktop: true,
+		mobile: true,
+		skills: [
+			'React',
+			'Next.js',
+			'Material-UI',
+			'Yup',
+			'Formik',
+			'Node.js',
+			'Express.js',
+			'PostgreSQL',
+			'Sequelize',
+			'Stripe',
+		],
+		description:
+			'Somos un gestor de telemedicina. Nuestra misión es conectar profesionales de la salud con pacientes que requieran de sus servicios de una manera amigable, comoda y accesible.',
+	},
 ];
 
 export const projectsEn: IProject[] = [
@@ -357,5 +381,28 @@ export const projectsEn: IProject[] = [
 		skills: ['Typescript', 'Next.js', 'Tailwind CSS'],
 		description:
 			'This is an application that allows you to learn more about cats: their characteristics, behaviors, habits, and more.',
+	},
+	{
+		id: '14',
+		title: 'Klinika',
+		link: 'https://mecharcovz-fe.vercel.app/',
+		shortLink: 'mecharcovz-fe.vercel.app',
+		source: klinika,
+		desktop: true,
+		mobile: true,
+		skills: [
+			'React',
+			'Next.js',
+			'Material-UI',
+			'Yup',
+			'Formik',
+			'Node.js',
+			'Express.js',
+			'PostgreSQL',
+			'Sequelize',
+			'Stripe',
+		],
+		description:
+			'We are a medical clinic. Our mission is to connect healthcare professionals with patients who need their services in a friendly, convenient, and accessible way.',
 	},
 ];
